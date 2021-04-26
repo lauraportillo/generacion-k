@@ -6,20 +6,13 @@ const message = 'Cómo será dar con Nekgikis V...';
 const numbers = [23, 24, 25, 18, 19, 5, 6, 7, 20, 15, 17, 8, 10, 11, 4, 3, 12, 2, 16, 14, 9, 21, 0, 1, 13, 22];
 
 const messageNoSpaces = message.replace(/ /g, '');
-console.log(messageNoSpaces);
-
 const messageLowecase = messageNoSpaces.toLowerCase();
-console.log(messageLowecase);
-
 const removeAccents = (str) => {
   return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 };
-
 const messageClean = removeAccents(messageLowecase);
-console.log(messageClean);
 
 let data = [];
-console.log(data);
 function getData() {
   for (let i = 0; i < messageClean.length; i++) {
     const letter = messageClean[i];
