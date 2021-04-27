@@ -1,16 +1,53 @@
 @import 'core/variables';
 @import 'core/reset';
 
+//HEADER
+.header {
+  margin-bottom: 20px;
+  background-color: $color-6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.header__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $color-1;
+}
+.header__subtitle {
+  font-size: 14px;
+  color: $color-7;
+}
+
+//MAIN
+.containerMain {
+  margin: 20px;
+}
+
 .sectionA {
   display: flex;
 }
 .sectionA__containerImg {
-  width: 1000px;
+  display: none;
 }
 .sectionA__containerImg--photo {
-  width: 100%;
+  display: none;
+}
+.sectionA__description {
+  font-size: 14px;
+}
+.sectionA__description--par {
+  margin-bottom: 15px;
 }
 
 .solution {
   color: orange;
+}
+
+//FOOTER
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
