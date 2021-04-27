@@ -48,6 +48,45 @@
   cursor: pointer;
 }
 
+.sectionB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+//tomb
+.hexagon {
+  width: 200px;
+  height: 57.735px;
+  background: $color-3;
+  position: relative;
+  transform: rotate(90deg);
+}
+.hexagon::before {
+  content: '';
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 28.8675px solid $color-3;
+}
+.hexagon::after {
+  content: '';
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 28.8675px solid $color-3;
+}
+
 .solution {
   color: orange;
 }
