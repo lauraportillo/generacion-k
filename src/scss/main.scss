@@ -1,11 +1,13 @@
 @import 'core/variables';
 @import 'core/reset';
 
-.containerImg {
-  width: 80px;
-  height: auto;
+.sectionA {
+  display: flex;
 }
-.containerImg__photo {
+.sectionA__containerImg {
+  width: 1000px;
+}
+.sectionA__containerImg--photo {
   width: 100%;
 }
 
