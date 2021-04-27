@@ -1,6 +1,8 @@
 @import 'core/variables';
 @import 'core/reset';
 
+// FORMAS EN CSS https://css-tricks.com/the-shapes-of-css/
+
 //HEADER
 .header {
   margin-bottom: 20px;
@@ -39,6 +41,11 @@
 }
 .sectionA__description--par {
   margin-bottom: 15px;
+}
+.link {
+  color: $color-4;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .solution {
