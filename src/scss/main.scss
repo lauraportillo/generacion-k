@@ -97,11 +97,13 @@
   align-items: center;
   color: $color-7;
 }
+.hexagon__message--space {
+  margin-bottom: 10px;
+}
 .hexagon__message--detail {
   font-size: 35px;
 }
 .sectionC {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,9 +122,22 @@
   align-items: center;
 }
 
-.sectionC__form--btn {
-  margin-left: 10px;
+.sectionC__form--btn1 {
+  margin-right: 5px;
   padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  border: solid $color-3 1px;
+  background-color: $color-3;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-9;
+  outline: inherit;
+  cursor: pointer;
+}
+.sectionC__form--btn2 {
+  margin-left: 5px;
+  padding: 10px 22px 10px 22px;
   border-radius: 10px;
   border: solid $color-3 1px;
   background-color: $color-3;
