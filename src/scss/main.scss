@@ -3,6 +3,9 @@
 
 // FORMAS EN CSS https://css-tricks.com/the-shapes-of-css/
 
+.containerBody {
+}
+
 //HEADER
 .header {
   margin-bottom: 20px;
@@ -25,10 +28,18 @@
 //MAIN
 .containerMain {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sectionA {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
 }
 .sectionA__containerImg {
   display: none;
@@ -52,8 +63,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 70px;
-  margin-bottom: 90px;
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 //tomb
 .hexagon {
@@ -94,7 +105,38 @@
   align-items: center;
   color: $color-7;
 }
-.solution {
+
+.sectionC__text {
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-4;
+}
+.sectionC__form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionC__form--btn {
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  border: solid $color-4 1px;
+  background-color: $color-4;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-8;
+  outline: inherit;
+}
+.sectionC__form--btn:hover {
+  background-color: $color-1;
+  border: $color-1;
+  transition: all 0.2s ease-in-out;
+}
+
+.sectionC__solution {
   color: orange;
 }
 
@@ -103,4 +145,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  bottom: 0;
+}
+.containerFooter__name:hover {
+  color: $color-1;
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
 }
