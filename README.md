@@ -1,3 +1,3 @@
-# Generación K
+# K Generation
 
-Hola! Soy Laura Portillo Rodríguez y esta es mi propuesta para resolver el reto para participar en la quinta edición de la Generación K.
+Hi! This is Laura Portillo Rodríguez and here is my proposal to solve the challenge to participate in K Generation's fifth edition.
