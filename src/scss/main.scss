@@ -148,7 +148,8 @@
   outline: inherit;
   cursor: pointer;
 }
-.sectionC__form--btn:hover {
+.sectionC__form--btn1:hover,
+.sectionC__form--btn2:hover {
   background-color: $color-1;
   color: $color-8;
   transition: all 0.2s ease-in-out;
