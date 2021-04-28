@@ -157,6 +157,7 @@
 
 .sectionC__solution {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
@@ -170,6 +171,10 @@
   font-size: 16px;
   color: $color-8;
   text-align: center;
+}
+
+.sectionC__solution--none {
+  display: none;
 }
 
 .sectionC__solution--url {

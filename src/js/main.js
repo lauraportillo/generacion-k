@@ -1,11 +1,13 @@
 'use strict';
 
+const hieroglyphsContainer = document.querySelector('.js-hieroglyphs');
 const solutionContainer = document.querySelector('.js-solution');
 const buttonElement = document.querySelector('.js-btn');
 const resetElement = document.querySelector('.js-reset');
 
 const message = 'Cómo será dar con Nekgikis V...';
 const numbers = [23, 24, 25, 18, 19, 5, 6, 7, 20, 15, 17, 8, 10, 11, 4, 3, 12, 2, 16, 14, 9, 21, 0, 1, 13, 22];
+const hieroglyphs = '𓀪 𓁢 𓁹 𓄿 𓀪 𓀃 𓁢 𓄿 𓀪 𓀃 𓁢 𓁹 𓄿';
 
 const messageNoSpaces = message.replace(/ /g, '');
 const messageLowecase = messageNoSpaces.toLowerCase();
@@ -29,6 +31,9 @@ const handleBtn = (evt) => {
   paintSolution();
 };
 
+hieroglyphsContainer.innerHTML = hieroglyphs;
+hieroglyphsContainer.classList.add('sectionC__solution--hieroglyphs');
+
 const paintSolution = () => {
   let html = '';
   for (let i = 0; i < data.length; i++) {
@@ -39,6 +44,8 @@ const paintSolution = () => {
     html += `</span>`;
   }
   solutionContainer.innerHTML = html;
+  hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
+  hieroglyphsContainer.classList.add('sectionC__solution--none');
 };
 
 data.sort(function (a, b) {
