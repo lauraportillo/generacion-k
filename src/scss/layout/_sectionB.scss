@@ -1,0 +1,60 @@
+.sectionB {
+  @include flex();
+  margin-top: 170px;
+  margin-bottom: 100px;
+  transform: scale(1.5);
+}
+.hexagon {
+  width: 200px;
+  height: 57.7px;
+  background: $color-3;
+  position: relative;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+.hexagon::before {
+  content: '';
+  position: absolute;
+  top: -29px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 29.1px solid $color-3;
+}
+.hexagon::after {
+  content: '';
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 29.2px solid $color-3;
+}
+.hexagon__message {
+  @include flex();
+  margin-top: -110px;
+  font-size: 9px;
+  color: $color-7;
+}
+.hexagon__message--clue {
+  @include flex();
+  text-align: center;
+  max-width: 50px;
+}
+
+.hexagon__message--space {
+  margin-top: 10px;
+}
+.hexagon__message--detail {
+  font-size: 35px;
+}
+@media all and (min-width: 768px) {
+  .sectionB {
+    margin-top: 250px;
+    transform: scale(2);
+  }
+}

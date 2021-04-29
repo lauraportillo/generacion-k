@@ -1,0 +1,111 @@
+.sectionC {
+  @include flex();
+}
+
+.sectionC__text {
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-1;
+}
+.sectionC__form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionC__form--btn1 {
+  margin-right: 5px;
+  padding: 10px 25px 10px 25px;
+  border-radius: 10px;
+  border: solid $color-3 1px;
+  background-color: $color-3;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-9;
+  outline: inherit;
+  cursor: pointer;
+}
+.sectionC__form--btn2 {
+  margin-left: 5px;
+  padding: 10px 22px 10px 22px;
+  border-radius: 10px;
+  border: solid $color-3 1px;
+  background-color: $color-3;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-9;
+  outline: inherit;
+  cursor: pointer;
+}
+.sectionC__form--btn1:hover,
+.sectionC__form--btn2:hover {
+  background-color: $color-1;
+  border: solid $color-1 1px;
+  color: $color-8;
+  transition: all 0.2s ease-in-out;
+}
+
+.sectionC__solution {
+  @include flex();
+  margin-top: 15px;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  background-color: $color-1;
+}
+
+.sectionC__solution--hieroglyphs {
+  font-size: 16px;
+  color: $color-8;
+  text-align: center;
+}
+
+.sectionC__solution--none {
+  display: none;
+}
+
+.sectionC__solution--url {
+  font-size: 16px;
+  color: $color-8;
+  text-align: center;
+}
+.sectionC__solution--url:hover {
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+@media all and (min-width: 768px) {
+  .sectionC__text {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .sectionC__form {
+    margin-top: 25px;
+  }
+  .sectionC__form--btn1 {
+    margin-right: 7px;
+    padding: 10px 55px 10px 55px;
+    font-size: 16px;
+  }
+  .sectionC__form--btn2 {
+    margin-left: 7px;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+  }
+  .sectionC__solution {
+    height: 70px;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  .sectionC__solution--hieroglyphs {
+    font-size: 22px;
+    color: $color-8;
+    text-align: center;
+  }
+  .sectionC__solution--url {
+    font-size: 20px;
+  }
+}

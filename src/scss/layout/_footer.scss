@@ -1,0 +1,12 @@
+.containerFooter {
+  @include flex();
+  bottom: 0;
+}
+.containerFooter__name:hover {
+  color: $color-1;
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+@media all and (min-width: 768px) {
+}
