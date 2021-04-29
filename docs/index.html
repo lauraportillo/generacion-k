@@ -1,68 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Laura Portillo</title>
+</head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<body class="containerBody">
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <header class="header">
+        <h1 class="header__title">Nekgikis V tomb</h1>
+        <h4 class="header__subtitle">Heading to expedition k</h4>
+    </header>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+    <main class="containerMain">
+        <section class="sectionA">
+            <div class="sectionA__description">
+                <p class="sectionA__description--par">
+                    In 2020, the architect <a href="https://www.linkedin.com/in/laura-portillo-rodríguez" target="_blank"
+                        title="linkedin profile"><span class="link">Laurix Portillo</span></a> began
+                    to study a new mysterious
+                    language called Javascript. Her
+                    intention was none other than to be part of the famous K expedition and start her career as a
+                    developer.
+                </p>
+                <p class="sectionA__description--par">
+                    A mysterious encrypted message needed to be solved: a phrase and a series of numbers raised the
+                    suspicions of archaeologists. The secret url, would lead us to the solution of the mystery.
+                </p>
+                <p class="sectionA__description--par">
+                    After long nights of study, Laurix Portillo found the enigma! In this
+                    <a href=" https://github.com/lauraportillo/generacion-k" class="link" target="_blank"
+                        title="take a look!">repo</a>, you
+                    can
+                    access the secret scripts.
+                </p>
+            </div>
+        </section>
+        <section class="sectionB">
+            <div>
+                <div class="hexagon"></div>
+                <div class="hexagon__message">
+                    <div class="hexagon__message--clue">"Cómo será dar con Nekgikis V..."</div>
+                    <div class="hexagon__message--clue hexagon__message--space">23, 24, 25, 18, 19, 5, 6, 7, 20, 15, 17,
+                        8, 10, 11, 4, 3, 12, 2,
+                        16, 14, 9, 21, 0, 1, 13, 22
+                    </div>
+                    <div class="hexagon__message--clue"><span class="hexagon__message--detail">𓂀</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionC">
+            <h3 class="sectionC__text animate__animated animate__pulse animate__infinite">Click the button to discover
+                the secret url!</h3>
 
-          </li>
-        </ul>
-      </main>
+            <form class="sectionC__form">
+                <button class="js-btn sectionC__form--btn1">url nekgikis v</button>
+                <button class="js-reset sectionC__form--btn2">Reset</button>
+            </form>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+            <div class="sectionC__solution">
+                <h3 class="js-hieroglyphs"></h3>
+                <a href="https://v.generacionk.kairosds.com/" target="_blank" title="go to kairosds">
+                    <h3 class="js-solution  sectionC__solution--url"></h3>
+                </a>
+            </div>
+        </section>
+    </main>
 
-        </small>
-      </footer>
+    <footer class="containerFooter">
+        <a href="https://github.com/lauraportillo" target="_blank" title="github profile" class="containerFooter__name">
+            <small>By Laura Portillo Rodríguez</small>
+        </a>
+        <small>©2021</small>
+    </footer>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
 </html>
