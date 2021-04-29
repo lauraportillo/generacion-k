@@ -4,6 +4,7 @@ Hi! This is **Laura Portillo Rodríguez** and here is my proposal to solve the c
 
 It would be great to be part of this expedition and grow as a developer in such an incredible company.
 I admire **Kairos** because they have strong values, they care about their clients and employees.
+
 I share the same values and I would love to join your **team**.
 
 In this repo you can see a little bit more about me.

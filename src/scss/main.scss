@@ -1,13 +1,12 @@
-@import 'core/variables';
+@import 'core/mixins';
 @import 'core/reset';
+@import 'core/variables';
 
 //HEADER
 .header {
+  @include flex();
   margin-bottom: 20px;
   background-color: $color-6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 10px;
 }
 .header__title {
@@ -22,18 +21,12 @@
 
 //MAIN
 .containerMain {
+  @include flex();
   margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .sectionA {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   max-width: 500px;
   margin-top: 20px;
 }
@@ -51,9 +44,7 @@
 }
 
 .sectionB {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex();
   margin-top: 170px;
   margin-bottom: 100px;
   transform: scale(1.5);
@@ -90,17 +81,13 @@
   border-top: 29.2px solid $color-3;
 }
 .hexagon__message {
+  @include flex();
   margin-top: -110px;
   font-size: 9px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: $color-7;
 }
 .hexagon__message--clue {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex();
   text-align: center;
   max-width: 50px;
 }
@@ -112,10 +99,7 @@
   font-size: 35px;
 }
 .sectionC {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex();
 }
 
 .sectionC__text {
@@ -165,10 +149,7 @@
 }
 
 .sectionC__solution {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex();
   margin-top: 15px;
   border-radius: 10px;
   height: 50px;
@@ -198,9 +179,7 @@
 }
 //FOOTER
 .containerFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex();
   bottom: 0;
 }
 .containerFooter__name:hover {
