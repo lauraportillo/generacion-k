@@ -97,8 +97,16 @@
   align-items: center;
   color: $color-7;
 }
+.hexagon__message--clue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 50px;
+}
+
 .hexagon__message--space {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .hexagon__message--detail {
   font-size: 35px;
@@ -206,14 +214,19 @@
   .sectionA__description {
     font-size: 16px;
   }
-  .hexagon {
-    transform: rotate(360deg) scale(1.4);
-  }
+  // .hexagon {
+  //   transform: rotate(360deg) scale(1.4);
+  // }
   // .hexagon__message {
   //   margin-top: -50px;
   //   font-size: 10px;
-  //   display: flex;
   //   flex-direction: row;
+  // }
+  // .hexagon__message--space {
+  //   margin-bottom: 0px;
+  // }
+  // .hexagon__message--detail {
+  //   font-size: 35px;
   // }
 }
 
