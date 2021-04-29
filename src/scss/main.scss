@@ -61,7 +61,7 @@
 //tomb
 .hexagon {
   width: 200px;
-  height: 57.735px;
+  height: 57.7px;
   background: $color-3;
   position: relative;
   transform: rotate(90deg);
@@ -70,24 +70,24 @@
 .hexagon::before {
   content: '';
   position: absolute;
-  top: -28.8675px;
+  top: -29px;
   left: 0;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 150px solid transparent;
-  border-bottom: 28.8675px solid $color-3;
+  border-bottom: 29.1px solid $color-3;
 }
 .hexagon::after {
   content: '';
   position: absolute;
-  bottom: -28.8675px;
+  bottom: -29px;
   left: 0;
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 150px solid transparent;
-  border-top: 28.8675px solid $color-3;
+  border-top: 29.2px solid $color-3;
 }
 .hexagon__message {
   margin-top: -110px;
@@ -214,20 +214,24 @@
   .sectionA__description {
     font-size: 16px;
   }
-  // .hexagon {
-  //   transform: rotate(360deg) scale(1.4);
-  // }
-  // .hexagon__message {
-  //   margin-top: -50px;
-  //   font-size: 10px;
-  //   flex-direction: row;
-  // }
-  // .hexagon__message--space {
-  //   margin-bottom: 0px;
-  // }
-  // .hexagon__message--detail {
-  //   font-size: 35px;
-  // }
+  .hexagon {
+    transform: rotate(360deg) scale(1.4);
+  }
+  .hexagon__message {
+    margin-top: -65px;
+    font-size: 10px;
+  }
+  .hexagon__message--clue {
+    max-width: 200px;
+  }
+
+  .hexagon__message--space {
+    margin-top: 5px;
+  }
+  .hexagon__message--detail {
+    margin-top: -5px;
+    font-size: 40px;
+  }
 }
 
 @media all and (min-width: 1280px) {
