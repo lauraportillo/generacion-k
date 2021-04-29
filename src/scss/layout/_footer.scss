@@ -1,5 +1,6 @@
 .containerFooter {
   @include flex();
+  font-size: 16px;
   bottom: 0;
 }
 .containerFooter__name:hover {
@@ -9,4 +10,7 @@
   transform: scale(1.2);
 }
 @media all and (min-width: 768px) {
+}
+.containerFooter {
+  font-size: 18px;
 }
