@@ -214,23 +214,9 @@
   .sectionA__description {
     font-size: 16px;
   }
-  .hexagon {
-    transform: rotate(360deg) scale(1.4);
-  }
-  .hexagon__message {
-    margin-top: -65px;
-    font-size: 10px;
-  }
-  .hexagon__message--clue {
-    max-width: 200px;
-  }
-
-  .hexagon__message--space {
-    margin-top: 5px;
-  }
-  .hexagon__message--detail {
-    margin-top: -5px;
-    font-size: 40px;
+  .sectionB {
+    margin-top: 250px;
+    transform: scale(2);
   }
   .sectionC__text {
     margin-top: 40px;
@@ -239,7 +225,6 @@
   .sectionC__form {
     margin-top: 25px;
   }
-
   .sectionC__form--btn1 {
     margin-right: 7px;
     padding: 10px 55px 10px 55px;
