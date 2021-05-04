@@ -17,6 +17,7 @@ const removeAccents = (str) => {
 const messageClean = removeAccents(messageLowecase);
 
 let messageArray = Array.from(messageClean);
+// console.log(messageArray);
 
 const data = messageArray.map((letter, i) => {
   return {
@@ -34,28 +35,11 @@ hieroglyphsContainer.innerHTML = hieroglyphs;
 hieroglyphsContainer.classList.add('sectionC__solution--hieroglyphs');
 
 const paintSolution = () => {
-  const result = data.reduce((letter) => {
-    result = `<span> ${letter}</span>`;
-  });
-
+  const result = messageArray.reduce((acc, letter) => acc + letter, '');
   solutionContainer.innerHTML = result;
   hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
   hieroglyphsContainer.classList.add('sectionC__solution--none');
 };
-
-// const paintSolution = () => {
-//   let html = '';
-//   for (let i = 0; i < data.length; i++) {
-//     const letter = data[i].letter;
-
-//     html += `<span>`;
-//     html += `${letter}`;
-//     html += `</span>`;
-//   }
-//   solutionContainer.innerHTML = html;
-//   hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
-//   hieroglyphsContainer.classList.add('sectionC__solution--none');
-// };
 
 data.sort(function (a, b) {
   return a.id - b.id;
