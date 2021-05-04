@@ -16,15 +16,15 @@ const removeAccents = (str) => {
 };
 const messageClean = removeAccents(messageLowecase);
 
-let data = [];
-const getData = () => {
-  for (let i = 0; i < messageClean.length; i++) {
-    const letter = messageClean[i];
-    const id = numbers[i];
-    data.push({ letter, id });
-  }
-};
-getData();
+let messageArray = Array.from(messageClean);
+
+const data = messageArray.map((letter, i) => {
+  return {
+    letter,
+    id: numbers[i],
+  };
+});
+console.log(data);
 
 const handleBtn = (evt) => {
   evt.preventDefault();
