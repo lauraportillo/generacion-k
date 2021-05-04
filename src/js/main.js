@@ -24,7 +24,6 @@ const data = messageArray.map((letter, i) => {
     id: numbers[i],
   };
 });
-console.log(data);
 
 const handleBtn = (evt) => {
   evt.preventDefault();
@@ -35,18 +34,28 @@ hieroglyphsContainer.innerHTML = hieroglyphs;
 hieroglyphsContainer.classList.add('sectionC__solution--hieroglyphs');
 
 const paintSolution = () => {
-  let html = '';
-  for (let i = 0; i < data.length; i++) {
-    const letter = data[i].letter;
+  const result = data.reduce((letter) => {
+    result = `<span> ${letter}</span>`;
+  });
 
-    html += `<span>`;
-    html += `${letter}`;
-    html += `</span>`;
-  }
-  solutionContainer.innerHTML = html;
+  solutionContainer.innerHTML = result;
   hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
   hieroglyphsContainer.classList.add('sectionC__solution--none');
 };
+
+// const paintSolution = () => {
+//   let html = '';
+//   for (let i = 0; i < data.length; i++) {
+//     const letter = data[i].letter;
+
+//     html += `<span>`;
+//     html += `${letter}`;
+//     html += `</span>`;
+//   }
+//   solutionContainer.innerHTML = html;
+//   hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
+//   hieroglyphsContainer.classList.add('sectionC__solution--none');
+// };
 
 data.sort(function (a, b) {
   return a.id - b.id;
