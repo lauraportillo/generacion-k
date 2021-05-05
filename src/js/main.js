@@ -17,7 +17,7 @@ const removeAccents = (str) => {
 const messageClean = removeAccents(messageLowecase);
 
 let messageArray = Array.from(messageClean);
-// console.log(messageArray);
+console.log(messageArray);
 
 const data = messageArray.map((letter, i) => {
   return {
@@ -25,6 +25,7 @@ const data = messageArray.map((letter, i) => {
     id: numbers[i],
   };
 });
+console.log(data);
 
 const handleBtn = (evt) => {
   evt.preventDefault();
@@ -35,7 +36,7 @@ hieroglyphsContainer.innerHTML = hieroglyphs;
 hieroglyphsContainer.classList.add('sectionC__solution--hieroglyphs');
 
 const paintSolution = () => {
-  const result = messageArray.reduce((acc, letter) => acc + letter, '');
+  const result = data.reduce((acc, letter) => acc + letter.letter, '');
   solutionContainer.innerHTML = result;
   hieroglyphsContainer.classList.remove('sectionC__solution--hieroglyphs');
   hieroglyphsContainer.classList.add('sectionC__solution--none');
