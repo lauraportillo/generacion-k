@@ -17,7 +17,6 @@ const removeAccents = (str) => {
 const messageClean = removeAccents(messageLowecase);
 
 let messageArray = Array.from(messageClean);
-console.log(messageArray);
 
 const data = messageArray.map((letter, i) => {
   return {
@@ -25,7 +24,6 @@ const data = messageArray.map((letter, i) => {
     id: numbers[i],
   };
 });
-console.log(data);
 
 const handleBtn = (evt) => {
   evt.preventDefault();
